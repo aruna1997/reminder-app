@@ -4,7 +4,7 @@ import { read_cookie , bake_cookie} from 'sfcookies';
 const reminder=(action)=>{
   let { text,duedate } =action;
     return{
-        id:Math.floor(Math.random()*10),
+        id:Math.random(),
         text,
         duedate
     }
